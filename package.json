@@ -28,6 +28,7 @@
     "prepush": "pnpm run test",
     "prettier:check": "prettier --check ./**/**/*.{ts,js,json}",
     "prettier:write": "prettier --write ./**/**/*.{ts,js,json}",
+    "release": "semantic-release",
     "test": "jest",
     "test:cov": "jest --coverage",
     "test:watch": "jest --watch"
