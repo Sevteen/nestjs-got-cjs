@@ -1,0 +1,3 @@
+export const GOT_INSTANCE_TOKEN = 'GOT_INSTANCE';
+export const GOT_OPTIONS_TOKEN = 'GOT_OPTIONS';
+export const GOT_MODULE_ID = 'HTTP_MODULE_ID';

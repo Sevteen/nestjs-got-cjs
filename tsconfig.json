@@ -1,0 +1,17 @@
+{
+  "extends": "@ih.sevteen/tsconfig",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "types": ["node", "jest"],
+    "outDir": "dist",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  },
+  "files": ["node_modules/jest-extended/types/index.d.ts"],
+  "include": ["test", "src"],
+  "exclude": ["node_modules", "tests"]
+}
