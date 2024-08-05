@@ -10,6 +10,7 @@ describe('schedulerPromise', () => {
     schedulerPromise(examplePromise(), asyncScheduler).subscribe({
       next: (value) => {
         expect(value).toBe('result');
+        done();
       },
       complete: () => done(),
       error: done.fail,
