@@ -26,19 +26,19 @@ jobs:
       - name: Publish version
         run: echo "RELEASE_VERSION=${{ github.ref_name }}" >> $GITHUB_OUTPUT
 
-      - name: git config
+      - name: GIT Configuration
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
-      - name: npm version bump
-        run: npm version --no-git-tag-version ${{ steps.publish_version.outputs.RELEASE_VERSION }}
+      - name: NPM version bump
+        run: pnpm version --no-git-tag-version ${{ steps.publish_version.outputs.RELEASE_VERSION }}
 
-      - name: push to github
-        run: |
-          git add .
-          git commit -m "chore: publish version ${{ steps.publish_version.outputs.RELEASE_VERSION }}"
-          git push origin HEAD:${{ github.event.repository.default_branch }}
+      # - name: push to github
+      #   run: |
+      #     git add .
+      #     git commit -m "chore: publish version ${{ steps.publish_version.outputs.RELEASE_VERSION }}"
+      #     git push origin HEAD:${{ github.event.repository.default_branch }}
           
       - name: Install dependencies
         run: pnpm install
