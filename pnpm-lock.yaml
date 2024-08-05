@@ -7,13 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      got-cjs:
-        specifier: file:/Users/ilhamhanif07/Documents/OpenSourceProject/got-cjs/got-cjs-14.4.2.tgz
-        version: file:../got-cjs/got-cjs-14.4.2.tgz
-      rxjs:
-        specifier: ^7.8.1
-        version: 7.8.1
     devDependencies:
       '@commitlint/cli':
         specifier: 19.3.0
@@ -81,6 +74,9 @@ importers:
       globals:
         specifier: 15.9.0
         version: 15.9.0
+      got-cjs-compat:
+        specifier: 14.4.3
+        version: 14.4.3
       husky:
         specifier: ^9.1.4
         version: 9.1.4
@@ -105,6 +101,9 @@ importers:
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
+      rxjs:
+        specifier: ^7.8.1
+        version: 7.8.1
       semantic-release:
         specifier: 24.0.0
         version: 24.0.0(typescript@5.5.4)
@@ -1847,9 +1846,8 @@ packages:
   gopd@1.0.1:
     resolution: {integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==}
 
-  got-cjs@file:../got-cjs/got-cjs-14.4.2.tgz:
-    resolution: {integrity: sha512-zdui3jbuIrDZwKKYp1wmAI3tE4e3tusiu1Eac8dtcA0FCilk8ruAplitts8IWRTeFeQbWZgFm/AzjzTbvMe/rQ==, tarball: file:../got-cjs/got-cjs-14.4.2.tgz}
-    version: 14.4.2
+  got-cjs-compat@14.4.3:
+    resolution: {integrity: sha512-JOW4ZoQy4FsRMbWYE5oBMAri0RdAnSDH4UNEDiC8qs+E0xcJttJeY1jRod7JQIwd46dv1kL5h66g1ELmwoX4iA==}
     engines: {node: '>=20'}
 
   graceful-fs@4.2.10:
@@ -5845,7 +5843,7 @@ snapshots:
     dependencies:
       get-intrinsic: 1.2.4
 
-  got-cjs@file:../got-cjs/got-cjs-14.4.2.tgz:
+  got-cjs-compat@14.4.3:
     dependencies:
       '@sindresorhus/is': 7.0.0
       '@szmarczak/http-timer': 5.0.1

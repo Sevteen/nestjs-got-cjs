@@ -1,5 +1,5 @@
 import { ModuleMetadata, Provider, Type } from '@nestjs/common';
-import { ExtendOptions } from 'got-cjs';
+import { ExtendOptions } from 'got-cjs-compat';
 
 export type GotModuleOptions = ExtendOptions;
 

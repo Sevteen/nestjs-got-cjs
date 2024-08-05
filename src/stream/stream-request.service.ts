@@ -1,6 +1,6 @@
 import { Injectable, Scope } from '@nestjs/common';
 import { createReadStream } from 'fs';
-import { Got, GotStream, HTTPAlias, Request, StreamOptions } from 'got-cjs';
+import { Got, GotStream, HTTPAlias, Request, StreamOptions } from 'got-cjs-compat';
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { Readable } from 'stream';

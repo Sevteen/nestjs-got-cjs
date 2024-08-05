@@ -1,6 +1,6 @@
 import { Readable } from 'stream';
 import { Inject, Injectable } from '@nestjs/common';
-import { Got, HTTPAlias, StreamOptions } from 'got-cjs';
+import { Got, HTTPAlias, StreamOptions } from 'got-cjs-compat';
 import { StreamRequest } from './stream-request.service';
 import { GOT_INSTANCE_TOKEN } from '../got/got.constant';
 

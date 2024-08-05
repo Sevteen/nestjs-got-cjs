@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import * as fs from 'fs'; // Import fs untuk mocking
-import { Got, Request, StreamOptions } from 'got-cjs';
+import { Got, Request, StreamOptions } from 'got-cjs-compat';
 import { Observable } from 'rxjs';
 import { EventEmitter, Readable } from 'stream';
 import { GOT_INSTANCE_TOKEN } from '../../src/got/got.constant';

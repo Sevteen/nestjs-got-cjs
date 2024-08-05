@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { Got, OptionsWithPagination } from 'got-cjs';
+import { Got, OptionsWithPagination } from 'got-cjs-compat';
 import { SchedulerLike, asapScheduler, of } from 'rxjs';
 import { PaginationService } from '../../src/paginate/paginate.service';
 import { GOT_INSTANCE_TOKEN } from '../../src/got/got.constant';
