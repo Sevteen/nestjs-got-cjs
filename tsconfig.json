@@ -9,7 +9,8 @@
     "types": ["node", "jest"],
     "outDir": "dist",
     "noUnusedLocals": false,
-    "noUnusedParameters": false
+    "noUnusedParameters": false,
+    "allowJs": true
   },
   "files": ["node_modules/jest-extended/types/index.d.ts"],
   "include": ["test", "src"],

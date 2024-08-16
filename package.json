@@ -13,9 +13,10 @@
   },
   "license": "ISC",
   "author": "",
-  "main": "src/index.ts",
+  "main": "dist/src/index.ts",
+  "types": "dits/src/index.d.ts",
   "files": [
-    "dist/src"
+    "dist/src/*"
   ],
   "scripts": {
     "prebuild": "rimraf dist",
