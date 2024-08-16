@@ -1,8 +1,19 @@
 {
   "name": "nestjs-got-cjs",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "Got module for Nest framework (node.js) 🗂 | Cross-compatible module for NestJS and common JS, providing essential functionalities.",
+  "keywords": [
+    "nestjs got commonjs",
+    "nestjs got cjs",
+    "nestjs-got-cjs",
+    "nestjs-got",
+    "nestjs got",
+    "nest-got",
+    "got",
+    "got-cjs",
+    "nest http",
+    "nestjs http"
+  ],
   "homepage": "https://github.com/sevteen/nestjs-got-cjs#readme",
   "bugs": {
     "url": "https://github.com/sevteen/nestjs-got-cjs/issues"
@@ -11,8 +22,8 @@
     "type": "git",
     "url": "git+https://github.com/sevteen/nestjs-got-cjs.git"
   },
-  "license": "ISC",
-  "author": "",
+  "license": "MIT",
+  "author": "Ilham Hanif",
   "main": "dist/src/index.ts",
   "types": "dist/src/index.d.ts",
   "files": [
@@ -38,9 +49,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "dependencies": {
-    "got-cjs-compat": "14.4.3"
   },
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
@@ -80,6 +88,11 @@
     "stream-mock": "^2.0.5",
     "ts-jest": "^29.2.3",
     "typescript": "^5.5.4"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^10.3.10",
+    "got-cjs-compat": "14.4.3",
+    "rxjs": "^7.8.1"
   },
   "engines": {
     "node": "^18.13.0 || ^20.9.0",
