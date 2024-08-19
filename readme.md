@@ -38,5 +38,12 @@ Installation is pretty simple and straightforward as all you have to do is run t
 Soon
 
 ## Contributing
+Want to help improve this project? Great!
 
-Soon
+To get started, please refer to our comprehensive guide:
+
+Contributing Guide: [guide](./CONTRIBUTING.md).
+
+## License
+
+[MIT-licensed](LICENSE)
