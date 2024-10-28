@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/sevteen/nestjs-got-cjs/compare/v1.1.0...v1.1.1) (2024-10-28)
+
+
+### Bug Fixes
+
+* **deps:** update got dependency ([56f91ef](https://github.com/sevteen/nestjs-got-cjs/commit/56f91ef43d30afb69e361e57a1506f7edf81f627))
+
 # [1.1.0](https://github.com/sevteen/nestjs-got-cjs/compare/v1.0.4...v1.1.0) (2024-08-16)
 
 
