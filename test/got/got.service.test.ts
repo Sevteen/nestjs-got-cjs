@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import got, { GotRequestFunction, OptionsOfJSONResponseBody, Response } from 'got-cjs-compat';
+import got, { GotRequestFunction, OptionsOfJSONResponseBody, Response } from 'got';
 import { Observable, SchedulerLike, asapScheduler } from 'rxjs';
 import { GOT_INSTANCE_TOKEN } from '../../src/got/got.constant';
 import { GotService } from '../../src/got/got.service';

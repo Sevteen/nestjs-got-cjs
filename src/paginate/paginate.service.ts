@@ -1,5 +1,5 @@
 // prettier-ignore
-import { Got, GotPaginate, OptionsWithPagination } from 'got-cjs-compat';
+import { Got, GotPaginate, OptionsWithPagination } from 'got';
 import { Inject, Injectable } from '@nestjs/common';
 import { Observable, asapScheduler, SchedulerLike } from 'rxjs';
 import { GOT_INSTANCE_TOKEN } from '../got/got.constant';

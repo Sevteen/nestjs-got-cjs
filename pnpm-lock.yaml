@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      got-cjs-compat:
-        specifier: 14.4.3
-        version: 14.4.3
+      got:
+        specifier: npm:got-cjs-compat@^14.4.5
+        version: got-cjs-compat@14.4.5
     devDependencies:
       '@commitlint/cli':
         specifier: 19.3.0
@@ -683,8 +683,8 @@ packages:
     resolution: {integrity: sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==}
     engines: {node: '>=10'}
 
-  '@sindresorhus/is@7.0.0':
-    resolution: {integrity: sha512-WDTlVTyvFivSOuyvMeedzg2hdoBLZ3f1uNVuEida2Rl9BrfjrIRjWA/VZIrMRLvSwJYCAlCRA3usDt1THytxWQ==}
+  '@sindresorhus/is@7.0.1':
+    resolution: {integrity: sha512-QWLl2P+rsCJeofkDNIT3WFmb6NrRud1SUYW8dIhXK/46XFV8Q/g7Bsvib0Askb0reRLe+WYPeeE+l5cH7SlkuQ==}
     engines: {node: '>=18'}
 
   '@sindresorhus/merge-streams@2.3.0':
@@ -720,6 +720,9 @@ packages:
   '@types/conventional-commits-parser@5.0.0':
     resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
 
+  '@types/fs-extra@11.0.4':
+    resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
+
   '@types/graceful-fs@4.1.9':
     resolution: {integrity: sha512-olP3sd1qOEe5dXTSaFvQG+02VdRXcdytWLAZsAq1PecU8uqQAhkrnbli7DagjtXKW/Bl7YJbUsa8MPcuc8LHEQ==}
 
@@ -740,6 +743,9 @@ packages:
 
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+
+  '@types/jsonfile@6.1.4':
+    resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
 
   '@types/node@20.14.12':
     resolution: {integrity: sha512-r7wNXakLeSsGT0H1AU863vS2wa5wBOK4bWMjZz2wj+8nBx+m5PeIn0k8AloSLpRuiwdRQZwarZqHE4FNArPuJQ==}
@@ -1856,8 +1862,8 @@ packages:
   gopd@1.0.1:
     resolution: {integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==}
 
-  got-cjs-compat@14.4.3:
-    resolution: {integrity: sha512-JOW4ZoQy4FsRMbWYE5oBMAri0RdAnSDH4UNEDiC8qs+E0xcJttJeY1jRod7JQIwd46dv1kL5h66g1ELmwoX4iA==}
+  got-cjs-compat@14.4.5:
+    resolution: {integrity: sha512-2QNeXAjpKsJGr43ACD2ViTwiRsr/bjYoiL4YsxfTRzEfxGD/nvWQPJTT1GGxLvl+wMhBqgnivPl54KRR+LIGuw==}
     engines: {node: '>=20'}
 
   graceful-fs@4.2.10:
@@ -3713,6 +3719,11 @@ packages:
     resolution: {integrity: sha512-GQHQqAopRhwU8Kt1DDM8NjibDXHC8eoh1erhGAJPEyveY9qqVeXvVikNKrDz69sHowPMorbPUrH/mx8c50eiBQ==}
     engines: {node: '>=18'}
 
+  zx@8.1.9:
+    resolution: {integrity: sha512-UHuLHphHmsBYKkAchkSrEN4nzDyagafqC9HUxtc1J7eopaScW6H9dsLJ1lmkAntnLtDTGoM8fa+jrJrXiIfKFA==}
+    engines: {node: '>= 12.17.0'}
+    hasBin: true
+
 snapshots:
 
   '@ampproject/remapping@2.3.0':
@@ -4499,7 +4510,7 @@ snapshots:
 
   '@sindresorhus/is@4.6.0': {}
 
-  '@sindresorhus/is@7.0.0': {}
+  '@sindresorhus/is@7.0.1': {}
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
@@ -4542,6 +4553,12 @@ snapshots:
     dependencies:
       '@types/node': 20.14.12
 
+  '@types/fs-extra@11.0.4':
+    dependencies:
+      '@types/jsonfile': 6.1.4
+      '@types/node': 20.14.12
+    optional: true
+
   '@types/graceful-fs@4.1.9':
     dependencies:
       '@types/node': 20.14.12
@@ -4564,6 +4581,11 @@ snapshots:
       pretty-format: 29.7.0
 
   '@types/json5@0.0.29': {}
+
+  '@types/jsonfile@6.1.4':
+    dependencies:
+      '@types/node': 20.14.12
+    optional: true
 
   '@types/node@20.14.12':
     dependencies:
@@ -5871,9 +5893,9 @@ snapshots:
     dependencies:
       get-intrinsic: 1.2.4
 
-  got-cjs-compat@14.4.3:
+  got-cjs-compat@14.4.5:
     dependencies:
-      '@sindresorhus/is': 7.0.0
+      '@sindresorhus/is': 7.0.1
       '@szmarczak/http-timer': 5.0.1
       cacheable-lookup: 7.0.0
       cacheable-request: 12.0.1
@@ -5884,6 +5906,7 @@ snapshots:
       p-cancelable: 4.0.1
       responselike: 3.0.0
       type-fest: 4.23.0
+      zx: 8.1.9
 
   graceful-fs@4.2.10: {}
 
@@ -7774,3 +7797,8 @@ snapshots:
   yocto-queue@1.1.1: {}
 
   yoctocolors@2.1.1: {}
+
+  zx@8.1.9:
+    optionalDependencies:
+      '@types/fs-extra': 11.0.4
+      '@types/node': 20.14.12

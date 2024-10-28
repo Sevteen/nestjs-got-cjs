@@ -2,7 +2,7 @@ import { DynamicModule, Module, Provider, Type } from '@nestjs/common';
 import { randomStringGenerator } from '@nestjs/common/utils/random-string-generator.util';
 import { GotService } from './got.service';
 import { GOT_INSTANCE_TOKEN, GOT_MODULE_ID, GOT_OPTIONS_TOKEN } from './got.constant';
-import got from 'got-cjs-compat';
+import got from 'got';
 import { StreamRequest } from '../stream/stream-request.service';
 import { StreamService } from '../stream/stream.service';
 import { PaginationService } from '../paginate/paginate.service';

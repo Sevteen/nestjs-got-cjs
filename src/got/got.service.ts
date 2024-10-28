@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { Got, GotRequestFunction, OptionsOfJSONResponseBody, Response, got } from 'got-cjs-compat';
+import { Got, GotRequestFunction, OptionsOfJSONResponseBody, Response, got } from 'got';
 import { Observable, SchedulerLike, asyncScheduler } from 'rxjs';
 import { scheduled } from '../lib/scheduler/scheduled';
 import { PaginationService } from '../paginate/paginate.service';

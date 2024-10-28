@@ -91,7 +91,7 @@
   },
   "peerDependencies": {
     "@nestjs/common": "^10.3.10",
-    "got-cjs-compat": "14.4.3",
+    "got": "npm:got-cjs-compat@^14.4.5",
     "rxjs": "^7.8.1"
   },
   "engines": {

@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { Readable } from 'stream';
-import { Got, got } from 'got-cjs-compat';
+import { Got, got } from 'got';
 import { GOT_INSTANCE_TOKEN } from '../../src/got/got.constant';
 import { StreamRequest } from '../../src/stream/stream-request.service';
 import { StreamService } from '../../src/stream/stream.service';
